@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/KodeCamp form.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <div class="form-title">
+        <h1>KodeCamp registration</h1>
+        <h3>Please fill the form below to get on the KodeCamp train...</h3>
+      </div>
+    </header>
+    <div class="form-background">
+      <form action="">
+        <div class="flex-label">
+          <div class="form-div">
+            <label for="name" id="name-l">Firstname</label><br />
+            <div class="grouped-input">
+              <input
+                class="long-input-2"
+                type="text"
+                id="name"
+                placeholder="John"
+                required
+              />
+            </div>
+          </div>
+          <div class="form-div">
+            <label for="name" id="name-l">Lastname</label><br />
+            <div class="grouped-input">
+              <input
+                class="long-input-2"
+                type="text"
+                id="name"
+                placeholder="Stone"
+                required
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="form-div">
+          <label for="email" id="email-l">Email</label><br />
+          <div class="grouped-input">
+            <input
+              class="long-input-1"
+              type="email"
+              id="email"
+              placeholder="Jstone@free.com"
+              required
+            />
+          </div>
+        </div>
+
+        <div class="form-radio-div">
+          <label for="gender" id="gender-l">Gender</label><br />
+          <div class="grouped-input">
+            <input name="gender" type="radio" id="male" value="male" />
+            <label class="flex-radio-label" for="male">Male</label>
+            <input name="gender" type="radio" id="male" value="female" />
+            <label class="flex-radio-label" for="female">Female</label>
+          </div>
+        </div>
+
+        <div class="form-select-div">
+          <label for="education" id="education-l">Educational level</label
+          ><br />
+          <div class="grouped-input">
+            <select class="long-input-1" id="select-dropdown" required>
+              <option disabled selected value="">
+                Select your educational level
+              </option>
+              <option value="none">None</option>
+              <option value="high-school">High-school</option>
+              <option value="bachelors">Bachelors</option>
+              <option value="masters">Masters</option>
+              <option value="phd">PHD</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-radio-div">
+          <label for="">Do you have a laptop?</label> <br />
+          <div class="grouped-input">
+            <input name="laptop" type="radio" id="yesL" value="yes" />
+            <label class="flex-radio-label" for="yesL">Yes</label>
+            <input name="laptop" type="radio" id="noL" value="no" />
+            <label class="flex-radio-label" for="noL">No</label>
+          </div>
+        </div>
+
+        <div class="form-checkbox-div">
+          <label>How did you hear about KodeCamp?</label>
+          <div class="grouped-input">
+            <div class="individual-checkbox">
+              <input id="one" type="checkbox" value="KodeCamp_outreach" />
+              <label for="one">Friends</label>
+            </div>
+
+            <div class="individual-checkbox">
+              <input id="two" type="checkbox" value="KodeCamp_outreach" />
+              <label for="two">Social-media</label>
+            </div>
+
+            <div class="individual-checkbox">
+              <input id="three" type="checkbox" value="KodeCamp_outreach" />
+              <label for="three">School</label>
+            </div>
+
+            <div class="individual-checkbox">
+              <input id="four" type="checkbox" value="KodeCamp_outreach" />
+              <label for="one">Website</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-select-div">
+          <label>What track are you regittering for?</label>
+          <br />
+          <div class="grouped-input">
+            <select class="long-input-1" id="select-dropdown" required>
+              <option disabled selected>Select track</option>
+              <option value="UI/UX">UI/UX</option>
+              <option value="Frontend">Frontend</option>
+              <option value="Backend">Backend</option>
+              <option value="Project Management">Project Management</option>
+              <option value="Autocard">Autocard</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-radio-div">
+          <label>What level are you on?</label> <br />
+          <div class="grouped-input">
+            <input name="level" type="radio" id="beginner" value="Beginner" />
+            <label class="flex-radio-label" for="beginner">Beginner</label>
+            <input
+              name="level"
+              type="radio"
+              id="intermediate"
+              value="Intermediate"
+            />
+            <label class="flex-radio-label" for="intermediate"
+              >intermediate</label
+            >
+          </div>
+        </div>
+
+        <div class="form-div">
+          <label>Tell us about yourself</label> <br />
+          <div class="grouped-input">
+            <textarea
+              name="bio"
+              id="bio"
+              maxlength="250"
+              placeholder="I am"
+            ></textarea>
+          </div>
+        </div>
+
+        <div class="form-select-div">
+          <label for="country">Country</label>
+          <div class="grouped-input">
+            <select class="long-input-1">
+              <option disabled selected>Choose a country</option>
+              <option value="Nigeria">Nigeria</option>
+              <option value="India">India</option>
+              <option value="Zimbabwe">Zimbabwe</option>
+              <option value="Germany">Germany</option>
+              <option value="Ghana">Ghana</option>
+              <option value="South Africa">South Africa</option>
+              <option value="Colombia">Colombia</option>
+              <option value="Peru">Peru</option>
+              <option value="Congo">Congo</option>
+              <option value="France">France</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-final-button">
+          <button type="submit">Register</button>
+        </div>
+      </form>
+    </div>
+    <div class="centered-text">
+      <p>Already have an account? click <a href="">here</a> to sign in</p>
+    </div>
+
+    <footer>
+      <div class="rights">
+        <h5>KodeCamp</h5>
+        <div>&copy;2020</div>
+      </div>
+    </footer>
+  </body>
+</html>
